@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="Я шаркбот. Давай поговорим об акулах!")
+    bot.send_message(chat_id=update.message.chat_id, text="Hi! I'm sharkbot. Let's talk about sharks!")
 
 from telegram.ext import CommandHandler
 start_handler = CommandHandler('start', start)
